@@ -51,8 +51,7 @@ include:
    # artifact-name: stainless_dongle_with_studio
 
   - board: nice_nano_v2
-    shield: stainless_right
-    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    shield: stainless_right nice_view
 
   - board: nice_nano_v2
     shield: settings_reset

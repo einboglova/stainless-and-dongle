@@ -16,7 +16,7 @@
 &kp LALT   &kp LGUI  &kp LALT  &lt 2 LEFT_BRACKET  &lt 3 RIGHT_BRACKET  &mo 1   &kp DELETE  &kp SPACE         &mo 2   &lt 1 EQUAL  &lt 3 SEMICOLON  &kp LEFT  &kp RIGHT  &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp A B &inc_dec_kp C D>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_1 {

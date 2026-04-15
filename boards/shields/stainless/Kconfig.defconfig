@@ -44,7 +44,7 @@ config BT_MAX_CONN
   default 2
 
 config BT_MAX_PAIRED
-  default 2s
+  default 2
 
 endif
 

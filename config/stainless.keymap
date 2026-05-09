@@ -1,7 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -9,14 +8,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_LEFT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
+            bindings = <&kp END>, <&kp HOME>;
         };
 
         sensor_right: sensor_right {
             compatible = "zmk,behavior-sensor-rotate";
             label = "SENSOR_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&kp K_VOLUME_UP>, <&kp K_VOLUME_DOWN>;
         };
     };
 
@@ -29,7 +28,7 @@
 &kp ESC    &kp N1    &kp N2    &kp N3              &kp N4               &kp N5                         &kp N6  &kp N7       &kp N8           &kp N9    &kp N0     &kp BSLH
 &kp TAB    &kp Q     &kp W     &kp E               &kp R                &kp T                          &kp Y   &kp U        &kp I            &kp O     &kp P      &kp BSPC
 &kp LCTRL  &kp A     &kp S     &kp D               &kp F                &kp G                          &kp H   &kp J        &kp K            &kp L     &kp SQT    &kp RET
-&kp LSHFT  &kp Z     &kp X     &kp C               &kp V                &kp B   &kp DEL    &kp DELETE  &kp N   &kp M        &kp COMMA        &kp DOT   &kp FSLH   &kp UP
+&kp LSHFT  &kp Z     &kp X     &kp C               &kp V                &kp B   &kp DEL    &kp K_MUTE  &kp N   &kp M        &kp COMMA        &kp DOT   &kp FSLH   &kp UP
 &kp LALT   &kp LGUI  &kp LALT  &lt 2 LEFT_BRACKET  &lt 3 RIGHT_BRACKET  &mo 1   &kp SPACE  &kp SPACE   &mo 2   &lt 1 EQUAL  &lt 3 SEMICOLON  &kp LEFT  &kp RIGHT  &kp DOWN
             >;
 
